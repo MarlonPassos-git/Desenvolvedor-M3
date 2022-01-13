@@ -42,6 +42,10 @@ body {
     color: red;
 }
 
+button {
+    cursor: pointer;
+}
+
 .wrapper {
     max-width: var(--desktop-size);
     margin: 0 auto;
