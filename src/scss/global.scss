@@ -1,0 +1,48 @@
+:root {
+    
+    /* Colors */
+
+    --black: #000000;
+    --gray-100: #C7C7C7;
+    --gray-500: #00000050;
+    --gray-900: #666666;
+    --primary: #00C0EE;
+    --white: #FFFFFF;
+
+    /* Fonts */
+
+    --font-very-large: 2rem;
+    --font-large: 1.75rem;
+    --font-medium: 1.5rem;
+    --font-small: 1rem;
+    --font-very-small: 0.875rem;
+
+    /* Breakpoints */
+
+    --desktop-size: 1500px;
+    --mobile-size: 375px;
+
+
+    /* spacings */
+
+    --spacing-container-padding: max(1rem, min(calc( -2.042rem + 13vw ), 10.125rem));
+
+    @media (min-width: 1500px) {
+        --spacing-container-padding: calc( -36.750rem + 50vw );
+    }
+
+}
+
+
+body {
+
+    background-color: var(--white);
+
+    font-family: 'Open Sans', sans-serif;
+    color: red;
+}
+
+.wrapper {
+    max-width: var(--desktop-size);
+    margin: 0 auto;
+}
