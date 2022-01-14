@@ -1,22 +1,18 @@
-import { createProduct } from './createProduct';
 import { showItemsScreen } from './showItemsScreen';
 
-export function getApiItems(totItems) {
+export function getApiItems(totItems, callback) {
     
     const urlProduct = 'http://localhost:5000/products';
 
     fetch(urlProduct)
     .then(response => response.json())
-    .then(dados => {
-        console.log(dados)
+    .then(async (dados) => {
+        const products = []
+        const totDados = dados.length;
 
-        const products = dados.map((product, index) => {
-            if (index < totItems) {
-                return createProduct(product);
-            }
-        })
+        await localStorage.setItem('productsList', JSON.stringify(dados));
 
-        showItemsScreen(products);
+        showItemsScreen(totItems);
     })
 
 
