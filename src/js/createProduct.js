@@ -1,11 +1,11 @@
+import { cartNumberRender } from './cartNumberRender.js';
+
 export function createProduct({color, date, id, image, name, parcelamento, price, size}) {
     
     const totalPrice = price.toFixed(2);
     const [totPortion] = parcelamento;
     const portionPrice = (totalPrice / totPortion).toFixed(2);
     const parser = new DOMParser();
-
-    console.log(portionPrice);
 
     const elementString = `
         <li class="productItem">
@@ -29,6 +29,16 @@ export function createProduct({color, date, id, image, name, parcelamento, price
 
 
     const $element = parser.parseFromString(elementString, 'text/html').body.firstChild;
+    $element.addEventListener('click', async () => {
+        
+        const TOT_ITEMS_CART = +parseInt(localStorage.getItem('TOT_ITEMS_CART'));
+        
+        await localStorage.setItem('TOT_ITEMS_CART', TOT_ITEMS_CART + 1);
+
+
+        cartNumberRender();
+
+    })
 
     return $element;
 }   
