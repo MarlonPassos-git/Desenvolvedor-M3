@@ -39,10 +39,10 @@ body {
     background-color: var(--white);
 
     font-family: 'Open Sans', sans-serif;
-    color: red;
+    
 }
 
-button {
+button, input[type="radio"] {
     cursor: pointer;
 }
 
