@@ -1,0 +1,98 @@
+.menu {
+    display: grid;
+    grid-template: 
+        "title order" 9.313rem
+        "filters produtsList"
+        "button button"
+        / 9.813rem 1fr;
+    ;
+    
+
+    column-gap: 2.75rem;
+
+    min-height: calc(100vh - 4rem - 2.063rem);
+    padding: 0 var(--spacing-container-padding);
+
+}
+
+
+
+.menu__title {
+    grid-area: title;
+
+    margin-top: 2.5rem; 
+
+    font-size: var(--font-very-large);
+    color: var(--black);
+}
+
+
+
+.menu__order {
+    grid-area: order;
+    align-self: center;
+    justify-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    height: 2.625rem;
+    width: 8.875rem;
+    border: var(--black) solid 0.063rem;
+
+    
+
+    text-align: start;
+    
+    cursor: pointer;
+}
+
+.menu__order select{
+
+    height: 2.625rem;
+    width: 8.875rem;
+    border: var(--black) solid 0.063rem;
+    padding-left: 0.625rem;
+
+    font-size: var(--font-small);
+    color: var(--black);
+    line-height: 2.375rem;
+    background-image: url('../img/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position:  right 0.625rem center;
+
+
+    
+}
+
+.menu__order select:focus{
+    outline: none;
+    text-align: start;
+}
+
+.menu__order select:focus option[disabled]{
+    display: none;
+}
+
+
+
+.menu__filters {
+    grid-area: filters;
+}
+
+.menu__produtsList {
+    grid-area: produtsList;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, max(10.125rem, min(calc( 9.438rem + 2.9000000000000004vw ), 12.1875rem)));
+    grid-template-rows: auto;
+    column-gap: max(1.1875rem, min(calc( 0.250rem + 4vw ), 4rem));
+    row-gap: max(1.125rem, min(calc( 0.667rem + 2vw ), 2.5rem));
+    justify-content: center;
+
+    padding: 0 10px;
+}
+
+.menu__moreItems {
+    grid-area: button;
+}
