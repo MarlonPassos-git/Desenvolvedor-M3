@@ -3,7 +3,7 @@
     grid-template: 
         "title order" 9.313rem
         "filters produtsList"
-        "button button"
+        ". button"
         / 9.813rem 1fr;
     ;
     
@@ -95,4 +95,36 @@
 
 .menu__moreItems {
     grid-area: button;
+    justify-self: center;
+
+
+    height: 2.188rem;
+    width: 10.938rem;
+    margin: 70px 0 35px;
+    background-color: var(--primary);
+
+    color: var(--white);
+    font-size: var(--font-very-small);
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+
+    transition-property: color, background-color;
+    transition-duration: 0.5s;
+    
+
+
+}
+
+.menu__moreItems:hover {
+    border: 3px solid var(--primary);
+    background-color: var(--white);
+    color: var(--primary);
+
+    animation-name: hvr-back-pulse;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: perspective(1px) translateZ(0);
 }
