@@ -2,10 +2,14 @@ import { createProduct } from './createProduct';
 
 
 export  function showItemsScreen(TOT_ITEMS_PAGE) {
+    console.log('showItemsScreen')
     const $productlist = document.querySelector('.menu__produtsList')
     const listItems = JSON.parse(localStorage.getItem('productsList'));
     const totDados = listItems.length;
     const  products = [];
+    const items_at_a_time = +localStorage.getItem('ITEMS_AT_A_TIME');
+
+    if (TOT_ITEMS_PAGE > totDados + items_at_a_time) return 
 
     for (let i = 0; i < totDados; i++) {
 
@@ -16,7 +20,6 @@ export  function showItemsScreen(TOT_ITEMS_PAGE) {
 
     $productlist.innerHTML = '';
 
-    for (let element of products) {
-        $productlist.appendChild(element)
-    }
+    $productlist.append(...products)
+    
 }

@@ -1,5 +1,6 @@
 import { showItemsScreen } from './showItemsScreen';
 import { getDataFormFilters } from './getDataFormFilters.js';
+import { getApiItems } from './getApiItems.js';
 
 export function addEventsElements (TOT_ITEMS_PAGE) {
     
@@ -8,7 +9,9 @@ export function addEventsElements (TOT_ITEMS_PAGE) {
     const $form = document.querySelector('.filters__form');
 
     $moreItems.addEventListener('click',  () => {
-        TOT_ITEMS_PAGE += 3;
+        const items_at_a_time = +localStorage.getItem('ITEMS_AT_A_TIME');
+        console.log(TOT_ITEMS_PAGE)
+        TOT_ITEMS_PAGE += items_at_a_time;
         showItemsScreen(TOT_ITEMS_PAGE)
     })
 
@@ -32,7 +35,29 @@ export function addEventsElements (TOT_ITEMS_PAGE) {
         showItemsScreen(TOT_ITEMS_PAGE)
     })
 
-    $form.addEventListener('change', getDataFormFilters)
+    $form.addEventListener('change', async ()=> {
+        const filters = getDataFormFilters()
+        const listItems = JSON.parse(localStorage.getItem('AllproductsList'));
+        
+        const listItemsFiltered = listItems.filter(item => {
+            if (filters.colors.length > 0) {
+                if (!filters.colors.includes(item.color.toLowerCase())) return false
+            }
+            if (filters.sizes.length > 0) {
+                if (!filters.sizes.includes(item.size.toLowerCase())) return false
+            }
+            if (filters.price.length > 0) {
+                if (!filters.price.includes(item.price.toLowerCase())) return false
+            }
+            return true
+        })
+        console.log(listItemsFiltered)
+
+        await localStorage.setItem('productsList', JSON.stringify(listItemsFiltered));
+
+        TOT_ITEMS_PAGE = 3;
+        showItemsScreen(3)
+    } )
 
 
 
