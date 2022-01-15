@@ -5,7 +5,7 @@ export function getDataFormFilters() {
     const $wrapperPrices = $form.querySelectorAll('.form__session--prices input');
     const colors = [];
     const sizes = [];
-    const price = [];
+    let price;
 
 
     for (let input of $wrapperColors) {
@@ -22,7 +22,7 @@ export function getDataFormFilters() {
 
     for (let wrapper of $wrapperPrices) {
         if (wrapper.checked) {
-            price.push(wrapper.value)
+            price = wrapper.value
         }
     }
 
