@@ -7,7 +7,7 @@ export async function getApiItems(firstCall, TOT_ITEMS_PAGE) {
     fetch(urlProduct)
     .then(response => response.json())
     .then(async (dados) => {
-        console.log('getapi')
+       
         const products = []
         const totDados = dados.length;
 
