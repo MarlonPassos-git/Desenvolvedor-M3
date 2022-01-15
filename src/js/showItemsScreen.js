@@ -2,7 +2,7 @@ import { createProduct } from './createProduct';
 
 
 export  function showItemsScreen(TOT_ITEMS_PAGE) {
-    console.log('showItemsScreen')
+
     const $productlist = document.querySelector('.menu__produtsList')
     const listItems = JSON.parse(localStorage.getItem('productsList'));
     const totDados = listItems.length;
