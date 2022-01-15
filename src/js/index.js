@@ -5,9 +5,9 @@ import { cartNumberRender } from './cartNumberRender.js';
 
 localStorage.removeItem('productsList')
 localStorage.setItem('TOT_ITEMS_CART', 0);
-localStorage.setItem('ITEMS_AT_A_TIME', 3);
+localStorage.setItem('ITEMS_AT_A_TIME', 9);
 
-let TOT_ITEMS_PAGE = localStorage.getItem('ITEMS_AT_A_TIME');
+let TOT_ITEMS_PAGE = +localStorage.getItem('ITEMS_AT_A_TIME');
 
 getApiItems(true, TOT_ITEMS_PAGE);
 cartNumberRender()
