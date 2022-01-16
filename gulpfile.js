@@ -17,6 +17,7 @@ const paths = {
   },
   styles: {
     src: "src/scss/main.scss",
+    watch: "src/scss/**/*.scss",
   },
   img: {
     src: "src/img/**/*",
@@ -89,6 +90,10 @@ function img() {
 const build = series(clean, parallel(styles, scripts, html, img));
 const dev = () => {
   watch(paths.scripts.watch, { ignoreInitial: false }, scripts).on(
+    "change",
+    browserSync.reload
+  );
+  watch(paths.styles.watch, { ignoreInitial: false }, styles).on(
     "change",
     browserSync.reload
   );
