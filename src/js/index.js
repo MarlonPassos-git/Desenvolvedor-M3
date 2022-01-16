@@ -5,13 +5,12 @@ import { cartNumberRender } from './cartNumberRender.js';
 
 localStorage.removeItem('productsList')
 localStorage.setItem('TOT_ITEMS_CART', 0);
-localStorage.setItem('ITEMS_AT_A_TIME', 9);
+localStorage.setItem('ITEMS_AT_A_TIME', 4);
+localStorage.setItem('TOT_ITEMS_PAGE', 4);
 
-let TOT_ITEMS_PAGE = +localStorage.getItem('ITEMS_AT_A_TIME');
-
-getApiItems(true, TOT_ITEMS_PAGE);
+getApiItems(true);
 cartNumberRender()
-addEventsElements(TOT_ITEMS_PAGE, showItemsScreen)
+addEventsElements(showItemsScreen)
 
     
     

@@ -1,6 +1,6 @@
 import { showItemsScreen } from './showItemsScreen';
 
-export async function getApiItems(firstCall, TOT_ITEMS_PAGE) {
+export async function getApiItems(firstCall) {
     
     const urlProduct = 'http://localhost:5000/products';
 
@@ -14,10 +14,6 @@ export async function getApiItems(firstCall, TOT_ITEMS_PAGE) {
         await localStorage.setItem('productsList', JSON.stringify(dados));
         await localStorage.setItem('AllproductsList', JSON.stringify(dados));
 
-
-        if (firstCall) showItemsScreen(TOT_ITEMS_PAGE)
+        if (firstCall) showItemsScreen()
     })
-
-
-
 }
