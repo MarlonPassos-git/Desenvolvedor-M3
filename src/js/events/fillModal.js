@@ -8,8 +8,6 @@ export function fillModal(title, $content) {
   let $cloneContent = $content.cloneNode(true);
   $modalTitle.innerHTML = title;
 
-  console.log($modalContent);
-
   if (title == "Ordernar") AddOrderEventsContent($cloneContent);
   else if (title == "filtrar") {
     $cloneContent = returnFormWithDetails()

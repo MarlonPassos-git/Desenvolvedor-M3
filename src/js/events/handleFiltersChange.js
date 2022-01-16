@@ -24,7 +24,6 @@ export async function handleFiltersChange(cssSelector) {
     return true;
   });
 
-  console.log(listItemsFiltered);
 
   await localStorage.setItem("productsList", JSON.stringify(listItemsFiltered));
 
