@@ -1,334 +1,333 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desenvolvedor M3</title>
-  <link rel="stylesheet" href="main.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-</body>
-
-<header class="header">
-  <img class="header__logo" src="./img/logo-m3.png" alt="logo m3" height="30" width="119">
-  <button class="header__shoppingCart">
-    <img 
-      src="https://img.icons8.com/ios-filled/20/000000/shopping-bag.png" 
-      alt="" 
-      class="shoppingCart__img" 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desenvolvedor M3</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
     />
-    <span class="shoppingCart__totalItems">0</span>
-  </button>
-</header>
+  </head>
 
-<main class="menu">
-  <h1 class="menu__title">
-    Blusas
-  </h1>
-  <form class="menu__order">
-    <select size="1" name="cars" id="cars">
-      <option selected disabled value="">Ordenar por: </option>
-      <option value="mais_recentes">Mais recentes</option>
-      <option value="menor_preco">Menor preço</option>
-      <option value="maior_preco">Maior preço</option>
-    </select>
-  </form>
-  <aside class="menu__filters">
-    <form class="filters__form">
-      
-      <div class="form__session form__session--colors">
-        <h2 class="form__session--title" >
-          cores
-        </h2>
-        <div class="form__session--options">
-          <label class="formItem__label">
-            <input 
-              class="formItem__input"
-              type="checkbox"
-              name="cor" 
-              value="amarelo"
-            >
-            Amarelo
-          </label>
-          <label class="formItem__label">
-            <input 
-              class="formItem__input"
-              type="checkbox"
-              name="cor" 
-              value="azul"
-            >
-            Azul
-          </label>
-          <label class="formItem__label">
-            <input 
-              class="formItem__input"
-              type="checkbox"
-              name="cor" 
-              value="azul"
-            >
-            Azul
-          </label>
-          <label class="formItem__label">
-            <input 
-              class="formItem__input"
-              type="checkbox"
-              name="cor" 
-              value="branco"
-            >
-            Branco
-          </label>
-          <label class="formItem__label">
-            <input 
-              class="formItem__input"
-              type="checkbox"
-              name="cor" 
-              value="cinza"
-            >
-            Cinza
-          </label>
-          <label class="formItem__label">
-            <input 
-              class="formItem__input"
-              type="checkbox"
-              name="cor" 
-              value="laranja"
-            >
-            Laranja
-          </label>
-          <label class="formItem__label">
-            <input 
-              class="formItem__input"
-              type="checkbox"
-              name="cor" 
-              value="verde"
-            >
-            Verde
-          </label>
-          <label class="formItem__label">
-            <input 
-              class="formItem__input"
-              type="checkbox"
-              name="cor" 
-              value="vermelho"
-            >
-            Vermelho
-          </label>
-          <label class="formItem__label">
-            <input 
-              class="formItem__input"
-              type="checkbox"
-              name="cor" 
-              value="preto"
-            >
-            Preto
-          </label>
-          <label class="formItem__label">
-            <input 
-              class="formItem__input"
-              type="checkbox"
-              name="cor" 
-              value="Rosa"
-            >
-            rosa
-          </label>
-        </div>
-      </div>
+  <body></body>
 
-      <!-- Sizes -->
-      <div class="form__session form__session--sizes">
-        <h2 class="form__session--title" >
-          Tamanhos
-        </h2>
-        <div class="form__session--options form__session--sizes">
-          <label class="formItem__label">
-            <input 
-            class="formItem__input--sizes"
-              type="checkbox"
-              name="size" 
-              value="p"
-            ><span>P</span>
-          </label>
+  <header class="header">
+    <img
+      class="header__logo"
+      src="./img/logo-m3.png"
+      alt="logo m3"
+      height="30"
+      width="119"
+    />
+    <button class="header__shoppingCart">
+      <img
+        src="https://img.icons8.com/ios-filled/20/000000/shopping-bag.png"
+        alt=""
+        class="shoppingCart__img"
+      />
+      <span class="shoppingCart__totalItems">0</span>
+    </button>
+  </header>
 
-          <label class="formItem__label">
-            <input 
-            class="formItem__input--sizes"
-              type="checkbox"
-              name="size" 
-              value="m"
-            >
-            <span>M</span>
-          </label>
+  <main class="menu">
+    <h1 class="menu__title">Blusas</h1>
+    <button class="menu__bottom menu__bottom--filter">Filtrar</button>
+    <button class="menu__bottom menu__bottom--ordenar">Ordenar</button>
 
-          <label class="formItem__label">
-            <input 
-            class="formItem__input--sizes"
-              type="checkbox"
-              name="size" 
-              value="g"
-            >
-            <span>G</span>
-          </label>
-
-          <label class="formItem__label">
-            <input 
-            class="formItem__input--sizes"
-              type="checkbox"
-              name="size" 
-              value="gg"
-            >
-            <span>gg</span>
-          </label>
-
-          <label class="formItem__label">
-            <input 
-            class="formItem__input--sizes"
-              type="checkbox"
-              name="size" 
-              value="u"
-            >
-            <span>U</span>
-          </label>
-
-          <label class="formItem__label">
-            <input 
-            class="formItem__input--sizes"
-              type="checkbox"
-              name="size" 
-              value="36"
-            >
-            <span>36</span>
-          </label>
-
-          <label class="formItem__label">
-            <input 
-            class="formItem__input--sizes"
-              type="checkbox"
-              name="size" 
-              value="38"
-            >
-            <span>38</span>
-          </label>
-
-          <label class="formItem__label">
-            <input 
-            class="formItem__input--sizes"
-              type="checkbox"
-              name="size" 
-              value="40"
-            >
-            <span>40</span>
-          </label>
-
-          <label class="formItem__label">
-            <input 
-            class="formItem__input--sizes"
-              type="checkbox"
-              name="size" 
-              value="42"
-            >
-            <span>42</span>
-          </label>
-
-          <label class="formItem__label">
-            <input 
-            class="formItem__input--sizes"
-              type="checkbox"
-              name="size" 
-              value="44"
-            >
-            <span>44</span>
-          </label>
-
-          <label class="formItem__label">
-            <input 
-            class="formItem__input--sizes"
-              type="checkbox"
-              name="size" 
-              value="46"
-            >
-            <span>46</span>
-          </label>
-        </div>
-      </div>
-
-
-      <!-- Preços -->
-
-      <div class="form__session form__session--prices">
-        <h2 class="form__session--title" >
-          Faixa de Preço
-        </h2>
-        <div class="form__session--options">
-          <label class="formItem__label">
-            <input 
-            class="formItem__input"
-              type="radio"
-              name="preco" 
-              value="0-50"
-            >
-            de R$0 até R$50
-          </label>
-          <label class="formItem__label">
-            <input 
-            class="formItem__input"
-              type="radio"
-              name="preco" 
-              value="51-150"
-            >de R$51 até R$150
-          </label>
-          <label class="formItem__label">
-            <input 
-            class="formItem__input"
-              type="radio"
-              name="preco" 
-              value="151-300"
-            >de R$151 até R$300
-          </label>
-          <label class="formItem__label">
-            <input 
-            class="formItem__input"
-              type="radio"
-              name="preco" 
-              value="301-500"
-            >de R$301 até R$500
-          </label>
-          <label class="formItem__label">
-            <input 
-            class="formItem__input"
-              type="radio"
-              name="preco" 
-              value="501-10000000"
-            >a partir de R$500
-          </label>
-        </div>
-      </div>
-      
+    <form class="menu__order hideElementMobileVersion">
+      <select size="1" name="cars" id="cars">
+        <option selected disabled value="">Ordenar por:</option>
+        <option value="mais_recentes">Mais recentes</option>
+        <option value="menor_preco">Menor preço</option>
+        <option value="maior_preco">Maior preço</option>
+      </select>
     </form>
-  </aside>
-  <ul class="menu__produtsList">
-    
+    <aside class="menu__filters hideElementMobileVersion">
+      <form class="filters__form">
+        <div class="form__session form__session--colors">
+          <h2 class="form__session--title">cores</h2>
+          <div class="form__session--options showFiveItems">
+            <label class="formItem__label">
+              <input
+                class="formItem__input"
+                type="checkbox"
+                name="cor"
+                value="amarelo"
+              />
+              Amarelo
+            </label>
+            <label class="formItem__label">
+              <input
+                class="formItem__input"
+                type="checkbox"
+                name="cor"
+                value="azul"
+              />
+              Azul
+            </label>
 
-  </ul>
-  <button class="menu__moreItems">Carregar mais</button>
+            <label class="formItem__label">
+              <input
+                class="formItem__input"
+                type="checkbox"
+                name="cor"
+                value="branco"
+              />
+              Branco
+            </label>
+            <label class="formItem__label">
+              <input
+                class="formItem__input"
+                type="checkbox"
+                name="cor"
+                value="cinza"
+              />
+              Cinza
+            </label>
+            <label class="formItem__label">
+              <input
+                class="formItem__input"
+                type="checkbox"
+                name="cor"
+                value="laranja"
+              />
+              Laranja
+            </label>
+            <label class="formItem__label">
+              <input
+                class="formItem__input"
+                type="checkbox"
+                name="cor"
+                value="verde"
+              />
+              Verde
+            </label>
+            <label class="formItem__label">
+              <input
+                class="formItem__input"
+                type="checkbox"
+                name="cor"
+                value="vermelho"
+              />
+              Vermelho
+            </label>
+            <label class="formItem__label">
+              <input
+                class="formItem__input"
+                type="checkbox"
+                name="cor"
+                value="preto"
+              />
+              Preto
+            </label>
+            <label class="formItem__label">
+              <input
+                class="formItem__input"
+                type="checkbox"
+                name="cor"
+                value="rosa"
+              />
+              rosa
+            </label>
+            <label class="formItem__label">
+              <input
+                class="formItem__input"
+                type="checkbox"
+                name="cor"
+                value="vinho"
+              />
+              Vinho
+            </label>
+          </div>
+          <button class="form__session--button">Ver todas as cores</button>
+        </div>
 
+        <!-- Sizes -->
+        <div class="form__session form__session--sizes">
+          <h2 class="form__session--title">Tamanhos</h2>
+          <div class="form__session--options form__session--sizes">
+            <label class="formItem__label">
+              <input
+                class="formItem__input--sizes"
+                type="checkbox"
+                name="size"
+                value="p"
+              /><span>P</span>
+            </label>
 
-</main>
+            <label class="formItem__label">
+              <input
+                class="formItem__input--sizes"
+                type="checkbox"
+                name="size"
+                value="m"
+              />
+              <span>M</span>
+            </label>
 
-<footer class="footer">
-  <p class="footer__text">
-    M3: Implantação de E-commerce VTEX
-  </p>
-</footer>
+            <label class="formItem__label">
+              <input
+                class="formItem__input--sizes"
+                type="checkbox"
+                name="size"
+                value="g"
+              />
+              <span>G</span>
+            </label>
 
+            <label class="formItem__label">
+              <input
+                class="formItem__input--sizes"
+                type="checkbox"
+                name="size"
+                value="gg"
+              />
+              <span>gg</span>
+            </label>
 
+            <label class="formItem__label">
+              <input
+                class="formItem__input--sizes"
+                type="checkbox"
+                name="size"
+                value="u"
+              />
+              <span>U</span>
+            </label>
 
-<script  type="module" src="bundle.js"></script>
+            <label class="formItem__label">
+              <input
+                class="formItem__input--sizes"
+                type="checkbox"
+                name="size"
+                value="36"
+              />
+              <span>36</span>
+            </label>
 
+            <label class="formItem__label">
+              <input
+                class="formItem__input--sizes"
+                type="checkbox"
+                name="size"
+                value="38"
+              />
+              <span>38</span>
+            </label>
+
+            <label class="formItem__label">
+              <input
+                class="formItem__input--sizes"
+                type="checkbox"
+                name="size"
+                value="40"
+              />
+              <span>40</span>
+            </label>
+
+            <label class="formItem__label">
+              <input
+                class="formItem__input--sizes"
+                type="checkbox"
+                name="size"
+                value="42"
+              />
+              <span>42</span>
+            </label>
+
+            <label class="formItem__label">
+              <input
+                class="formItem__input--sizes"
+                type="checkbox"
+                name="size"
+                value="44"
+              />
+              <span>44</span>
+            </label>
+
+            <label class="formItem__label">
+              <input
+                class="formItem__input--sizes"
+                type="checkbox"
+                name="size"
+                value="46"
+              />
+              <span>46</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Preços -->
+
+        <div class="form__session form__session--prices">
+          <h2 class="form__session--title">Faixa de Preço</h2>
+          <div class="form__session--options">
+            <label class="formItem__label">
+              <input
+                class="formItem__input"
+                type="radio"
+                name="preco"
+                value="0-50"
+              />
+              de R$0 até R$50
+            </label>
+            <label class="formItem__label">
+              <input
+                class="formItem__input"
+                type="radio"
+                name="preco"
+                value="51-150"
+              />de R$51 até R$150
+            </label>
+            <label class="formItem__label">
+              <input
+                class="formItem__input"
+                type="radio"
+                name="preco"
+                value="151-300"
+              />de R$151 até R$300
+            </label>
+            <label class="formItem__label">
+              <input
+                class="formItem__input"
+                type="radio"
+                name="preco"
+                value="301-500"
+              />de R$301 até R$500
+            </label>
+            <label class="formItem__label">
+              <input
+                class="formItem__input"
+                type="radio"
+                name="preco"
+                value="501-10000000"
+              />a partir de R$500
+            </label>
+          </div>
+        </div>
+      </form>
+    </aside>
+
+    <ul class="menu__produtsList"></ul>
+
+    <button class="menu__moreItems">Carregar mais</button>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">M3: Implantação de E-commerce VTEX</p>
+  </footer>
+
+  <div id="modal" hidden>
+    <h1 class="modal__title"></h1>
+    <button class="modal__buttonClosed"></button>
+    <hr class="modal__line" />
+    <div class="modal__content"></div>
+  </div>
+
+  <script type="module" src="bundle.js"></script>
 </html>

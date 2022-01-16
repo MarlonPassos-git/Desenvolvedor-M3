@@ -1,9 +1,10 @@
 # Venha ser um desenvolvedor da Digital M3
 
-Ola, somos a Agência Digital M3, uma agência voltada para ramo de comercio eletrônico, trabalhamos com implantação, migração, evolução e otmização de e-commerces. Estamos com a sede de desenvolvimento em Nova Friburgo RJ. Mas contratamos pessoas de todo o pais, visto que trabalhamos 100% home office.  
-> R. Helena Coutinho, 41 
+Ola, somos a Agência Digital M3, uma agência voltada para ramo de comercio eletrônico, trabalhamos com implantação, migração, evolução e otmização de e-commerces. Estamos com a sede de desenvolvimento em Nova Friburgo RJ. Mas contratamos pessoas de todo o pais, visto que trabalhamos 100% home office.
+
+> R. Helena Coutinho, 41
 > Braunes, Nova Friburgo/RJ
-[https://goo.gl/maps/2mWagcctnrGdtFhBA]( https://goo.gl/maps/2mWagcctnrGdtFhBA )
+> [https://goo.gl/maps/2mWagcctnrGdtFhBA](https://goo.gl/maps/2mWagcctnrGdtFhBA)
 
 Estamos procurando Desenvolvedores(as) `Front-end`, com sólidos conhecimentos em HTML, CSS e JS para projetar interfaces e entregar a melhor experiência para os consumidores visando sempre a otimização do código e agilidade no desenvolvimento.
 
@@ -29,7 +30,7 @@ Estamos procurando Desenvolvedores(as) `Front-end`, com sólidos conhecimentos e
 - Typescript
 - React
 
-----
+---
 
 ## Como se candidatar a vaga
 
@@ -38,7 +39,6 @@ Estamos procurando Desenvolvedores(as) `Front-end`, com sólidos conhecimentos e
 - Atualize o readme com as instruções necessárias para rodar o seu código;
 - Adicione também seu e-mail de contato ao readme do projeto ( caso seu e-mail do github esteja privado )
 - Faça um pull request (ou envie para [heraldo@digitalm3.com.br](mailto:heraldo@digitalm3.com.br?subject=Vaga%20DEV%20-%20Digital%20M3)
-
 
 **obs.**: link do projeto [github.com/agenciam3/Desenvolvedor-M3](https://github.com/agenciam3/Desenvolvedor-M3)
 
@@ -55,12 +55,14 @@ Para instalar as dependencias só é preciso executar o comando: `npm install`
 O dar start no server e nos processos para desenvolvimento é necessário rodar o comando: `npm start `
 
 Uma ver que o comando é dado ele irá levantar 2 servidores, sendo eles:
- - um para acessar o front-end que roda na porta 3000. No qual pode ser acessado pela url: http://localhost:3000
- - um para o json-server que irá export uma api com a lista de produtos que roda na porta 5000. Para acessar os produtos é na url:  http://localhost:5000/products
+
+- um para acessar o front-end que roda na porta 3000. No qual pode ser acessado pela url: http://localhost:3000
+- um para o json-server que irá export uma api com a lista de produtos que roda na porta 5000. Para acessar os produtos é na url: http://localhost:5000/products
 
 ### Objetivo
 
 O objetivo desse desafio é avaliar a seus conhecimentos fundamentais de front end, por isso pedimos que não utilize nenhum framework, porem caso deseje utilizar frameworks como react, é possivel adicionar ao setup.
+
 ### Obrigatório
 
 - HTML5 e CSS3

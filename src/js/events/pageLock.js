@@ -1,5 +1,4 @@
 export function pageLock() {
-    
-    const $body = document.querySelector('body');
-    $body.classList.toggle('lock');
+  const $body = document.querySelector("body");
+  $body.classList.toggle("lock");
 }

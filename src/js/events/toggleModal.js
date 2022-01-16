@@ -1,5 +1,4 @@
 export function toggleModal() {
-    
-    const $modal = document.querySelector('#modal');
-    $modal.classList.toggle('modal');
+  const $modal = document.querySelector("#modal");
+  $modal.classList.toggle("modal");
 }

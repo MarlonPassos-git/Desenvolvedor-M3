@@ -1,8 +1,7 @@
-import { handleFiltersChange } from "./handleFiltersChange"
+import { handleFiltersChange } from "./handleFiltersChange";
 
 export function AddFilterEventsContent($content) {
-    $content.addEventListener('click', ()=> {
-        handleFiltersChange('#modal form')
-    
-    })
+  $content.addEventListener("click", () => {
+    handleFiltersChange("#modal form");
+  });
 }

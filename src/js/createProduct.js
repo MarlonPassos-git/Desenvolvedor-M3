@@ -1,13 +1,21 @@
-import { cartNumberRender } from './cartNumberRender.js';
+import { cartNumberRender } from "./cartNumberRender.js";
 
-export function createProduct({color, date, id, image, name, parcelamento, price, size}) {
-    
-    const totalPrice = price.toFixed(2);
-    const [totPortion] = parcelamento;
-    const portionPrice = (totalPrice / totPortion).toFixed(2);
-    const parser = new DOMParser();
+export function createProduct({
+  color,
+  date,
+  id,
+  image,
+  name,
+  parcelamento,
+  price,
+  size,
+}) {
+  const totalPrice = price.toFixed(2);
+  const [totPortion] = parcelamento;
+  const portionPrice = (totalPrice / totPortion).toFixed(2);
+  const parser = new DOMParser();
 
-    const elementString = `
+  const elementString = `
         <li class="productItem">
             <a href="#">
                 <img src="${image}" alt="${name}" class="productItem__img">
@@ -25,21 +33,17 @@ export function createProduct({color, date, id, image, name, parcelamento, price
                 Comprar
             </button>
         </li>
-    `
+    `;
 
+  const $element = parser.parseFromString(elementString, "text/html").body
+    .firstChild;
+  $element.addEventListener("click", async () => {
+    const TOT_ITEMS_CART = +parseInt(localStorage.getItem("TOT_ITEMS_CART"));
 
-    const $element = parser.parseFromString(elementString, 'text/html').body.firstChild;
-    $element.addEventListener('click', async () => {
-        
-        const TOT_ITEMS_CART = +parseInt(localStorage.getItem('TOT_ITEMS_CART'));
-        
-        await localStorage.setItem('TOT_ITEMS_CART', TOT_ITEMS_CART + 1);
+    await localStorage.setItem("TOT_ITEMS_CART", TOT_ITEMS_CART + 1);
 
+    cartNumberRender();
+  });
 
-        cartNumberRender();
-
-    })
-
-    return $element;
-}   
-
+  return $element;
+}
