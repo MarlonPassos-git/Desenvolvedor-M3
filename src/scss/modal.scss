@@ -80,3 +80,15 @@
 .modal .showFiveItems :nth-child(n + 6) {
   display: block;
 }
+
+.modal  summary {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal details{
+  list-style: none;
+  width: 100%;
+
+
+}
